@@ -3,7 +3,7 @@
   "productName": "Quasar App",
   "version": "0.0.1",
   "description": "A Quasar App",
-  "author": "Your Name <your@email.com>",
+  "author": "Luciano Braga <lucianobragaweb@gmail.com>",
   "scripts": {
     "clean": "node build/script.clean.js",
     "dev": "node build/script.dev.js",
@@ -12,10 +12,13 @@
   },
   "dependencies": {
     "babel-runtime": "^6.25.0",
+    "localforage": "^1.5.0",
+    "moment": "^2.15.0",
     "quasar-extras": "0.x",
     "quasar-framework": "^0.14.1",
     "vue": "~2.3.4",
-    "vue-router": "^2.7.0"
+    "vue-router": "^2.7.0",
+    "vuex": "^2.4.0"
   },
   "devDependencies": {
     "autoprefixer": "^6.4.0",
