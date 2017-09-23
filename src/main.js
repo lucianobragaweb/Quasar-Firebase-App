@@ -13,11 +13,11 @@ require(`quasar/dist/quasar.${__THEME}.css`)
 import Vue from 'vue'
 import Quasar from 'quasar'
 import router from './router'
-import database from './plugins/database'
+import firebase from './plugins/firebase'
 
 Vue.config.productionTip = false
 Vue.use(Quasar) // Install Quasar Framework
-Vue.use(database) // Install Quasar Framework
+Vue.use(firebase, { router }) // Install Quasar Framework
 
 if (__THEME === 'mat') {
   require('quasar-extras/roboto-font')

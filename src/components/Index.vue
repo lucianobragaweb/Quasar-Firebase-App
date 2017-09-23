@@ -12,6 +12,8 @@
       <cc-list :list="list"></cc-list>
     </div>
 
+    <a href="#" @click="logout">Logout</a>
+
   </q-layout>
 </template>
 
@@ -63,7 +65,12 @@ export default {
     return {
       list: []
     }
-  }, 
+  },
+  methods:{
+    logout(){
+      this.$auth.signOut()
+    }
+  }
 }
 </script>
 
