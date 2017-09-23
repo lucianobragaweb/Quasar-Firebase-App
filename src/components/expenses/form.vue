@@ -30,7 +30,6 @@
 
 <script>
 import moment from 'moment'
-import { uid } from 'quasar'
 
 export default {
   data() {
@@ -45,8 +44,7 @@ export default {
   },
   methods: {
     submit() {
-      const cloned = JSON.parse(JSON.stringify(this.expense))
-      cloned.id = uid()
+      this.$db.ref('expenses').push(this.expense)
       this.reset()
     },
     reset() {
