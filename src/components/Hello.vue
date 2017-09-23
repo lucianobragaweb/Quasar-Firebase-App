@@ -3,7 +3,7 @@
     
     <nav class="navbar navbar-dark bg-dark">
       <a class="navbar-brand" href="#">
-        <img src="../assets/money.svg" width="30" height="30" class="d-inline-block align-top" alt=""> Minhas despesas diárias
+        <img src="../assets/money.svg" width="30" height="30" class="d-inline-block align-top" alt=""> My diary Expenses
       </a>
     </nav>
 

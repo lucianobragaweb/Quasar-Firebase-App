@@ -16,17 +16,17 @@ export default {
     askRemove(expense) {
       const self = this
       Dialog.create({
-        title: 'Tem Certeza?',
-        message: 'Você deseja realmente excluir este registro?',
+        title: 'Confirm?',
+        message: 'Do you really want to delete this record?',
         buttons: [
           {
-            label: 'Cancelar',
+            label: 'Cancel',
             handler() {
               console.log('Disagreed...')
             }
           },
           {
-            label: 'Confirmar',
+            label: 'Confirm',
             handler() {
               self.remove(expense)
             }
@@ -58,7 +58,7 @@ export default {
 
       <div class="list-group">
         <a href="#" class="list-group-item list-group-item-action flex-column align-items-start" :class='{ "list-group-item-success": expense.done }' v-for="expense in list" @click="toggle(expense)">
-          <h5>R$ {{ expense.amount }}
+          <h5>$ {{ expense.amount }}
             <small>{{ expense.date }}</small>
             <a href="#" @click.prevent="askRemove(expense)" class="btn btn-danger btn-xs pull-right">X</a>
           </h5>

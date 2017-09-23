@@ -2,14 +2,14 @@
   <form @submit.prevent="submit" class="form">
     <div class="form-group">
       <div class="input-group">
-        <span class="input-group-addon" id="basic-addon1">R$</span>
-        <input ref="amount" v-model="expense.amount" type="number" class="form-control" placeholder="Valor" aria-label="Valor" aria-describedby="basic-addon1">
+        <span class="input-group-addon" id="basic-addon1">$</span>
+        <input ref="amount" v-model="expense.amount" type="number" class="form-control" placeholder="Value" aria-label="Value" aria-describedby="basic-addon1">
       </div>
     </div>
 
     <div class="form-group">
       <div class="input-group">
-        <input v-model="expense.description" type="text" class="form-control" placeholder="Descrição" aria-label="Descrição">
+        <input v-model="expense.description" type="text" class="form-control" placeholder="Description" aria-label="Description">
       </div>
     </div>
 
@@ -23,7 +23,7 @@
     </div>
 
     <div class="form-group">
-      <button class="btn btn-success btn-block">Salvar</button>
+      <button class="btn btn-success btn-block btn-lg">Save</button>
     </div>
   </form>
 </template>
@@ -38,7 +38,7 @@ export default {
       expense: {
         amount: '',
         description: '',
-        date: moment().format('DD/MM/YYYY'),
+        date: moment().format('YYYY/MM/DD'),
         done: false
       }
     }
@@ -49,8 +49,6 @@ export default {
       cloned.id = uid()
       this.$store.commit('ADD_EXPENSE', cloned)
       this.reset()
-
-      console.log(moment().format('dd/mm/aaaa'))
     },
     reset() {
       this.expense.amount = '',
