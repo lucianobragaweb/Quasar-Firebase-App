@@ -9,7 +9,7 @@
 
     <div class="container">
       <cc-form></cc-form>
-      <cc-list></cc-list>
+      <cc-list :list="list"></cc-list>
     </div>
 
   </q-layout>
@@ -47,7 +47,12 @@ export default {
     QItemMain,
     CcForm,
     CcList
-  }
+  },
+  data(){
+    return {
+      list: []
+    }
+  }, 
 }
 </script>
 

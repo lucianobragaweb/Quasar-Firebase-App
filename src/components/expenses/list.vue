@@ -1,17 +1,8 @@
 <script>
-import { getExpenses } from '../../persistence'
-import { setDone } from '../../persistence'
 import { Dialog } from 'quasar'
 
 export default {
-  mounted() {
-    this.$store.commit('SET_EXPENSES', getExpenses())
-  },
-  computed: {
-    list() {
-      return this.$store.state.Expenses.list
-    }
-  },
+  props: ['list'],
   methods: {
     askRemove(expense) {
       const self = this
@@ -35,12 +26,10 @@ export default {
       })
     },
     remove(expense) {
-      this.$store.commit('REMOVE_EXPENSE', expense)
+      
     },
     toggle(expense) {
       expense.done = !expense.done
-
-      setDone(expense)
     }
   }
 }
