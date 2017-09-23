@@ -1,14 +1,11 @@
 <template>
   <q-layout ref="layout" view="lHh Lpr fff" :left-class="{'bg-grey-2': true}">
-
-    <q-toolbar color="primary">
-      <q-toolbar-title>
-        Despesas em Dinheiro Vivo
-        <span slot="subtitle">
-          Controle suas despesas
-        </span>
-      </q-toolbar-title>
-    </q-toolbar>
+    
+    <nav class="navbar navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">
+        <img src="../assets/money.svg" width="30" height="30" class="d-inline-block align-top" alt=""> Minhas despesas diárias
+      </a>
+    </nav>
 
     <div class="container">
       <cc-form></cc-form>
@@ -55,7 +52,7 @@ export default {
 </script>
 
 <style scoped>
-  .container{
-    padding: 20px
-  }
+.container {
+  padding: 20px
+}
 </style>
