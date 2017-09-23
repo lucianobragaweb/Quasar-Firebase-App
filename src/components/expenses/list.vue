@@ -26,7 +26,7 @@ export default {
       })
     },
     remove(expense) {
-      
+      this.$db.ref(`expenses/${expense.id}`).remove()
     },
     toggle(expense) {
       expense.done = !expense.done
