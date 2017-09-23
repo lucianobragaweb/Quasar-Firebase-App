@@ -35,6 +35,7 @@ export default {
   data() {
     return {
       expense: {
+        id: '',
         amount: '',
         description: '',
         date: moment().format('YYYY/MM/DD'),
