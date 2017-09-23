@@ -30,6 +30,8 @@ export default {
     },
     toggle(expense) {
       expense.done = !expense.done
+      
+      this.$db.ref(`expenses/${expense.id}`).update(expense)
     }
   }
 }
