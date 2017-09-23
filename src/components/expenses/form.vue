@@ -38,7 +38,7 @@ export default {
       expense: {
         amount: '',
         description: '',
-        date: moment().format('YYYY/MM/DD'),
+        date: moment().format('DD/MM/YYYY'),
         done: false
       }
     }
@@ -49,6 +49,8 @@ export default {
       cloned.id = uid()
       this.$store.commit('ADD_EXPENSE', cloned)
       this.reset()
+
+      console.log(moment().format('dd/mm/aaaa'))
     },
     reset() {
       this.expense.amount = '',
