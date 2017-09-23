@@ -1,8 +1,8 @@
 # Cash Expenses App
 
-> A Quasar Framework project
+> App developed with Quasar Framework, Vue.Js and Apache Cordova 
 
-![Homepage of the App](/screenshots/expenses.png?raw=true "Homepage of the App")
+![Homepage of the App](/screenshots/iphone.png?raw=true "Homepage of the App")
 
 ## Build Setup
 
