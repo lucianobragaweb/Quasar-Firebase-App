@@ -1,6 +1,8 @@
-# Quasar App
+# Cash Expenses App
 
-> A Quasar project
+> A Quasar Framework project
+
+![Homepage of the App](/screenshots/expenses.png?raw=true "Homepage of the App")
 
 ## Build Setup
 
